@@ -104,6 +104,7 @@
             android:layout_toRightOf="@id/currencyTextView"
             android:layout_below="@id/quantityTitleTextView"
             android:text="-"
+            android:onClick="minusButtonClick"
             />
 
         <TextView
@@ -126,6 +127,7 @@
             android:layout_toRightOf="@id/quantityTextView"
             android:layout_below="@id/quantityTitleTextView"
             android:text="+"
+            android:onClick="plusButtonClick"
             />
     </RelativeLayout>
 
