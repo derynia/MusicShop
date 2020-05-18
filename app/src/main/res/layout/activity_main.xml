@@ -53,10 +53,10 @@
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgGoodPic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/mouse_little" />
+        app:srcCompat="@drawable/mouse_guitar" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -71,11 +71,13 @@
         <TextView
             android:id="@+id/priceTextView"
             style="@style/MainTextView"
+            android:layout_width="100dp"
             android:layout_below="@id/orderPriceTitleTextView"
             android:layout_marginStart="40dp"
             android:layout_marginTop="10dp"
-            android:textSize="22sp"
-            android:text="0" />
+            android:gravity="right"
+            android:text="0"
+            android:textSize="22sp" />
 
         <TextView
             android:id="@+id/currencyTextView"
@@ -95,27 +97,28 @@
             android:text="Quantity" />
 
         <Button
+            android:id="@+id/minusButton"
+            style="@style/Button"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            style="@style/Button"
-            android:id="@+id/minusButton"
-            android:layout_marginStart="110dp"
+            android:layout_below="@id/quantityTitleTextView"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/currencyTextView"
-            android:layout_below="@id/quantityTitleTextView"
-            android:text="-"
             android:onClick="minusButtonClick"
-            />
+            android:text="-" />
 
         <TextView
             android:id="@+id/quantityTextView"
             style="@style/MainTextView"
-            android:layout_marginTop="10dp"
+            android:layout_width="50dp"
             android:layout_below="@id/quantityTitleTextView"
-            android:layout_toRightOf="@id/minusButton"
             android:layout_marginStart="15dp"
-            android:textSize="22sp"
-            android:text="0" />
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/minusButton"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="22sp" />
 
         <Button
             android:layout_width="50dp"
