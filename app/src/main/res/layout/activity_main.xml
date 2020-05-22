@@ -10,7 +10,7 @@
 >
 
     <EditText
-        android:id="@+id/mainEditText"
+        android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -137,6 +137,7 @@
     <Button
         android:id="@+id/buttonAddToCart"
         android:layout_width="match_parent"
+        android:onClick="addToCart"
         style="@style/Button"
         android:text="ADD TO CART"
         android:layout_marginTop="20dp"
